@@ -1,0 +1,38 @@
+{
+  "name": "stock-exchange-api",
+  "version": "1.0.0",
+  "description": "Stock exchange api for coding test",
+  "main": "src/server.js",
+  "author": "Peter Takacs",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "lint": "eslint . --fix",
+    "docker:up": "docker-compose -f docker-compose.yml up",
+    "test": "ENV NODE_ENV=test mocha --ui tdd"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-http": "^4.3.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-chai-friendly": "^0.5.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "^7.1.1",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "config": "^3.3.1",
+    "dayjs": "^1.8.23",
+    "fastify": "^2.13.0",
+    "fastify-healthcheck": "^2.1.0",
+    "fastify-helmet": "^3.0.2",
+    "fastify-swagger": "^2.5.0",
+    "node-fetch": "^2.6.0"
+  }
+}
