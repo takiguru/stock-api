@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  stock-api:
+    build: .
+    container_name: stock--api
+    ports:
+      - '3000:3000'
+    expose:
+      - '3000'
+    
