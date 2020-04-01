@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "17ebe3aa-7206-437e-b33c-b5239e148b89",
+		"name": "Stock api",
+		"description": "Stock api endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getCurrentPrice",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/AAPL",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"AAPL"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getHistoricalPrice",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/AAPL/history/?start-date=2018-02-01&end-date=2019-01-01",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"AAPL",
+						"history",
+						""
+					],
+					"query": [
+						{
+							"key": "start-date",
+							"value": "2018-02-01"
+						},
+						{
+							"key": "end-date",
+							"value": "2019-01-01"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
