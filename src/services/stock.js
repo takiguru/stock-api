@@ -59,7 +59,7 @@ module.exports = (fastify, opts, next) => {
         details = await stockPrices.json()
       } catch (err) {
         fastify.log.error(err)
-        return response.code(500).send('Fetching stock prices failed')
+        return response.code(500).send('Fetching historical stock prices failed')
       }
       if (!details.symbol) {
         return response.code(404).send('Symbol not found')
