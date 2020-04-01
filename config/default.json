@@ -1,0 +1,14 @@
+{
+    "server":{
+        "logger": true,
+        "stockApiUrls": {
+            "realtimePrice": "https://financialmodelingprep.com/api/v3/stock/real-time-price/",
+            "historicalPrice": "https://financialmodelingprep.com/api/v3/historical-price-full/"
+        },
+        "plugins":{
+            "enableSwaggerEndpoint": true
+        },
+        "host": "localhost",
+        "port": 3000
+    }
+}
