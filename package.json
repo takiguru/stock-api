@@ -33,6 +33,6 @@
     "fastify-healthcheck": "^2.1.0",
     "fastify-helmet": "^3.0.2",
     "fastify-swagger": "^2.5.0",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   }
 }
